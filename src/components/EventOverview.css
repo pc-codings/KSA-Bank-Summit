@@ -1,0 +1,18 @@
+.event-overview {
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .event-overview h2 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  
+  .event-overview p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,23 @@
+.topics {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .topics h2 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  
+  .topics ul {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
+  
+  .topics li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  

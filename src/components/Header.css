@@ -1,0 +1,86 @@
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.video-overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: rgba(255, 85, 0, 0.8); /* Add background to highlight the text */
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.event-details span {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Add background to event details */
+  padding: 5px 10px;
+}
+
+.event-details h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-details p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full-page height */
+  background-color: white; /* Leftover space will appear white */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: none;
+  pointer-events: none; /* Prevent interaction with the video */
+}
+
+.gray-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent gray overlay */
+  z-index: 2;
+}
+
+

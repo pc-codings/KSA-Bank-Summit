@@ -1,0 +1,144 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo */
+  .navbar-left a img {
+    width: 150px;
+    height: auto;
+    max-height: 80px;
+  }
+  
+  /* Center Links */
+  .navbar-center {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .navbar-center .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .navbar-center .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-center .nav-links a:hover {
+    color: #007BFF;
+  }
+  
+  /* Dropdown Styles */
+  .navbar-center .nav-links .dropdown {
+    position: relative;
+  }
+  
+  .navbar-center .nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    z-index: 1000;
+  }
+  
+  .navbar-center .nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .navbar-center .nav-links .dropdown-menu li {
+    list-style: none;
+    margin: 0.5rem 0;
+  }
+  
+  .navbar-center .nav-links .dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+  }
+  
+  .navbar-center .nav-links .dropdown-menu a:hover {
+    color: #007BFF;
+  }
+  
+  /* Right Section */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right .cart-icon,
+  .navbar-right .user-icon {
+    color: #333;
+    text-decoration: none;
+    margin-left: 1rem;
+    position: relative;
+    font-size: 1.2rem;
+  }
+  
+  .navbar-right .cart-count {
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .navbar-left {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  
+    .navbar-center .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .navbar-right {
+      width: 100%;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  }
+  
+  /* Transitions */
+  .navbar,
+  .navbar-center .nav-links a,
+  .navbar-right .cart-icon,
+  .navbar-right .user-icon {
+    transition: all 0.3s ease;
+  }
+  
